@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Club Berkah</title>
+
+    <!-- Logo Web -->
+    <link
+      class="logoweb"
+      rel="icon"
+      href="asset/img/img-property/Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="asset/css/produk.css" />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4c729db828.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Button Back -->
+
+    <div class="container">
+      <div class="logo">
+        <a href="#"
+          ><img src="asset/img/img-property/Logo.png" alt="NC Berkah"
+        /></a>
+      </div>
+
+      <nav>
+        <!-- Button Dropdown -->
+        <div class="dropdown dropdown-neu">
+          <button class="btn btn-neu">List Produk</button>
+          <div class="dropdown-panel">
+            <div class="dropdown-item">
+              <a href="#shake">Shake Herbalife </a>
+            </div>
+            <div class="dropdown-item"><a href="#aloe">Herbalife Aloe </a></div>
+            <div class="dropdown-item"><a href="#ppp">Protein Booster </a></div>
+            <div class="dropdown-item"><a href="#teh">Teh Herbalife </a></div>
+            <div class="dropdown-item">
+              <a href="#nutrisi">Nutrisi Sesuai Target </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Dark Mode -->
+        <button class="dark-1" onclick="toggleDarkMode()">
+          <ion-icon name="moon-outline" class="icon-moon"></ion-icon>
+          <ion-icon name="sunny-outline" class="icon-sun hidden"></ion-icon>
+        </button>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Shake -->
+      <h2 class="title-shake" id="shake">Shake Herbalife</h2>
+      <div class="card hide">
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/shake/vanilla.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Shake Vanilla</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/shake/coklat.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Shake Coklat</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/shake/berry.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Shake Berry</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/shake/cockies.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Shake Cockies & Cream</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/shake/mint.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Shake Mint Coklat</h2>
+          </div>
+        </article>
+      </div>
+
+      <div class="line"></div>
+      <!-- Aloevera -->
+      <h2 class="title-produk" id="aloe">Herbalife Aloe</h2>
+      <div class="card hide">
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/aloe/mandarin.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Aloe Mandarin Orange</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/aloe/concentrate.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Aloe Original</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/aloe/mango.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Aloe Mango Mangga</h2>
+          </div>
+        </article>
+      </div>
+
+      <div class="line"></div>
+
+      <!-- PPP -->
+      <h2 class="title-produk" id="ppp">Protein Booster</h2>
+      <div class="card hide">
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/protein/protein powder.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Protein Powder 24g</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/protein/Mixed Fiber.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Mixed Fiber</h2>
+          </div>
+        </article>
+      </div>
+
+      <div class="line"></div>
+
+      <!-- Teh -->
+      <h2 class="title-produk" id="teh">Teh Herbalife</h2>
+      <div class="card hide">
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/teh/nrg.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>NRG Instant Tea 60g</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/teh/consentrate.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Herbal Concentrate Tea 100 g</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/teh/consentrate honey.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Concentrate Honey</h2>
+          </div>
+        </article>
+      </div>
+
+      <div class="line"></div>
+
+      <!-- Nutrisi -->
+      <h2 class="title-produk" id="nutrisi">Nurtisi Sesuai Target</h2>
+      <div class="card hide">
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/cell-u-loss.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Cell-U-Loss</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/collagen plus powder.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Collagen Plus Powder</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/niteworks.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Niteworks</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/herbalifine 100.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Herbalifine 100</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/immulift.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Immulift</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/Immunoturmeric.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Immunoturmeric</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/Nutrition Active.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Nutrition Active</h2>
+          </div>
+        </article>
+        <article>
+          <div class="card-img hide">
+            <img src="asset/img/nutrisi/Multivitamin.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h2>Multivitamin, Mineral & Herbal Tablet</h2>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="asset/js/main.js"></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

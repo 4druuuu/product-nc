@@ -1,0 +1,294 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #f1f1f1 #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  color: #000;
+  transition: background-color 1s, color 1s;
+}
+
+.container {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 1;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3%;
+  transition: background-color 1s, color 1s;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 90px;
+  height: 50px;
+}
+
+/* Button Dropdown */
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode .btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #000;
+}
+
+.dropdown-item:hover a {
+  color: #fff;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-panel {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 1;
+  margin-top: 5px;
+  width: 10rem;
+  transition: 0.5s ease-in-out;
+}
+
+/* DarkMode button */
+button ion-icon {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  color: #000;
+}
+
+button ion-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+/* DarkMode Function */
+.dark-mode {
+  background-color: #000;
+  color: #ffffff;
+  transition: background-color 1s, color 1s;
+}
+
+.dark-mode .line {
+  border-bottom: 2px solid #fff;
+}
+
+.dark-mode .container {
+  background-color: #000;
+}
+
+.dark-mode .container button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode button ion-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.container button {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode .icon-moon {
+  display: none;
+}
+
+.dark-mode .icon-sun {
+  color: #fff;
+}
+
+.dark-mode .card article {
+  background-color: #ffffff1a;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgba(37, 37, 37, 0.856);
+}
+
+.dark-mode .card article:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  position: relative;
+  box-shadow: 6px 6px 6px 6px rgba(37, 37, 37, 0.856);
+}
+
+.dark-mode .card-img img {
+  filter: drop-shadow(2px 4px 6px rgba(158, 158, 158, 0.856));
+  transition: 0.5s ease-in-out;
+}
+
+.dark-mode .card-img img:hover {
+  filter: drop-shadow(4px 10px 15px rgba(158, 158, 158, 0.856));
+  transition: 0.5s ease-in-out;
+}
+
+.dark-mode .dropdown-panel {
+  background-color: #000;
+}
+
+.dark-mode .dropdown-item:hover {
+  background-color: #fff;
+}
+
+.dark-mode .dropdown-panel a {
+  color: #fff;
+}
+
+.dark-mode .dropdown-item:hover a {
+  color: #000;
+}
+
+/* Line */
+.line {
+  border-bottom: 2px solid;
+  margin: auto;
+  width: 75%;
+}
+
+/* Title Produk */
+.title-shake {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.title-produk {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Poruduk Herbalife */
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.4rem 3%;
+  align-items: center;
+}
+
+.card article {
+  background-color: #fff;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card article:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  position: relative;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.card-img img {
+  height: 100%;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+.card-img img:hover {
+  transform: scale(1.3);
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(2px 4px 6px #000);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Animation Scroll */
+@media (prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }
+}
+
+.hide {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-50%);
+  transition: all 1.2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

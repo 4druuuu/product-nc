@@ -1,0 +1,66 @@
+@media screen and (max-width: 825px) {
+  /* DarkMode */
+  .dark {
+    margin-right: 4rem;
+  }
+
+  /* Content */
+  .container-1 {
+    transform: translate(-65%, 5%);
+  }
+
+  .container-1 h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .container-1 p {
+    font-size: 1rem;
+  }
+
+  .aboutme h2,
+  .produkme .title,
+  .kegiatan h2,
+  .kontak h2 {
+    font-size: 2rem;
+  }
+
+  .aboutme p {
+    font-size: 0.8rem;
+  }
+
+  .kegiatan-img {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  .kegiatan-img img {
+    margin: auto;
+    width: 85%;
+  }
+
+  /* Produk */
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card article:hover {
+    transform: none;
+  }
+
+  .dark-mode .card article:hover {
+    transform: none;
+  }
+
+  .title-shake {
+    margin-bottom: 0.5rem;
+  }
+
+  .title-produk {
+    margin-top: 5rem;
+  }
+
+  .line {
+    margin-bottom: -2rem;
+  }
+}
